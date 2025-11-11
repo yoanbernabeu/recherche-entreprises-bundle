@@ -35,7 +35,7 @@ class Entreprise
             dateCreation: $data['date_creation'] ?? null,
             etatAdministratif: $data['etat_administratif'] ?? null,
             nombreEtablissements: $data['nombre_etablissements'] ?? null,
-            estAssociation: $data['est_association'] ?? null,
+            estAssociation: $data['complements']['est_association'] ?? null,
         );
     }
 
