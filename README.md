@@ -64,6 +64,7 @@ php bin/console recherche-entreprise:search 652014051 --siren
 - `SearchResult` : Résultat paginé
 - `Entreprise` : Données d'entreprise
 - `Siege` : Établissement siège
+- `Dirigeant` : Données sur le ou les dirigeants
 
 ### 🧪 Tests
 

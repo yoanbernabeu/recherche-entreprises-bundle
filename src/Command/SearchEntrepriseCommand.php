@@ -53,6 +53,7 @@ class SearchEntrepriseCommand extends Command
                     ['SIREN' => $entreprise->siren],
                     ['Nom' => $entreprise->nomComplet],
                     ['Adresse' => $entreprise->siege?->adresse ?? 'N/A'],
+                    ['Dirigeants' => implode(', ', $entreprise->dirigeants)],
                     ['Code NAF' => $entreprise->activitePrincipale ?? 'N/A'],
                     ['Actif' => $entreprise->isActif() ? '✅ Oui' : '❌ Non'],
                 );
